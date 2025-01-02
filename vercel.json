@@ -12,11 +12,7 @@
     ],
     "routes":[
         {
-            "src": "/new/(.*)",
-            "dest": "app.js"
-        },
-        {
-            "src": "/open/(.*)",
+            "src": "/new",
             "dest": "app.js"
         },
         {
