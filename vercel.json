@@ -12,7 +12,7 @@
     ],
     "routes":[
         {
-            "src": "/new",
+            "src": "/api/(.*)",
             "dest": "app.js"
         },
         {
@@ -21,7 +21,7 @@
         },
         {
             "src": "/(.+)",
-            "dest": "app.js"
+            "dest": "public/$1"
         }
     ]
 }

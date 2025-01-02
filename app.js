@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html')
 })
 
-app.get('/new/:file/:text', (req, res) => {
+app.get('/api/new/:file/:text', (req, res) => {
     const file = req.params.file;
     const text = req.params.text;
 
@@ -22,7 +22,7 @@ app.get('/new/:file/:text', (req, res) => {
     fs.writeFileSync(__dirname +  '/file/' + file, text)
 })
 
-app.get('/open/:file', (req, res) => {
+app.get('/api/open/:file', (req, res) => {
     const file = req.params.file;
 
     console.log(file)
